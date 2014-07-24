@@ -1,0 +1,12 @@
+<h1>Logs</h1>
+<hr />
+<table class="table table-striped" ng-controller="ModalController">
+	<thead>
+		<th>Log</th>
+		<th></th>
+	</thead>
+	<tr ng-repeat="item in items">
+		<td><a href="#/view/{{item.id}}">{{item.title}}</a></td>
+		<td><button class="btn btn-primary btn-xs" ng-click="openModal(item.id)">View</button></td>
+	</tr>
+</table>
